@@ -248,6 +248,23 @@ footer {
 }
 
 
+/*GRILLA PARA FORMULARIO */ 
+form {
+    position : relative;
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    background : #FFF url(background.jpg);
+    display  : grid;
+    grid-gap : 20px;
+    grid-template-columns : repeat(2, 1fr);
+    grid-template-rows    : 10em 1em 1em 1em;
+  }
+
+
+
 
  /*  HEADER NAV SECTION ASIDE FOOTER 
 ESTO HAY QUE USAR PARA LAS GRIDS 
@@ -275,16 +292,11 @@ grid-template-areas:
 
 
 }
+*/
 
 
-.estilo-gridelemento {
 
-display: grid;
-grid-template-columns: 400px 500px;
-grid-template-rows: 600px 600px;
-}
-
-
+/*
 .grid-container {
 display: grid;
 grid-template-rows:  100px 100px 100px;
@@ -312,3 +324,5 @@ justify-self: start;
 align-self: start;
 }
 */
+
+

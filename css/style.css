@@ -28,7 +28,6 @@ body {
 }
 
 
-
 /*ESTILO DEL TITULO H1*/
 h1 {
     font-family: melankola;
@@ -75,13 +74,6 @@ h2:hover {
     color: rgb(0, 0, 0);
 }
 
-
-/* ESTE CODIGO ES EL QUE HACE QUE LA BARRA DE NAVEGACION SE MUEVA JUNTO A LA PAGINA*/
-.container-fluid {
-    position: fixed;
-    z-index: 100;
-    background: linear-gradient(rgb(255, 251, 0), rgb(255, 255, 255));
-}
 
 
 
@@ -185,21 +177,22 @@ footer {
 .estilo-h2 {
     color: rgb(255, 251, 0);;
     display: block;
+    color: white;
 }
 
 
 /*ESTE CODIGO LE DA ESTILO A LA FOTO DE PORQUE ELEGIRNOS*/
 .estilo-div2 {
-    background-image: url(elegirnos.jpg);
-    background-repeat: repeat;
+    background-image: url(porqueelegirnos.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     display: block;
-    margin-left: 50%;
+    margin-left: 70%;
     max-width: 700px;
-    height: 600px;
+    height: 300px;
     position: relative;
     border-radius: 2%;
+     
 }
 
 

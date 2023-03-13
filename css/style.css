@@ -197,7 +197,6 @@ footer {
 
 .estilo-h2 {
     color: rgb(255, 251, 0);
-    ;
     display: block;
     color: white;
     font-size: 45px;
@@ -211,7 +210,7 @@ footer {
     display: block;
     position: relative;
     bottom: 280px;
-    height: 100px;
+    height: 120px;
 }
 
 
@@ -244,13 +243,28 @@ footer {
 
 .estilo-li1 {
     padding-top: 2.5%;
-
     color: rgb(229, 255, 0);
     font-size: 18px;
     max-width: 750px;
 
 }
 
+.estilo-li2 {
+    padding-top: 2.5%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    max-width: 750px;
+  
+
+
+}
+
+
+.estiloli3{
+    text-decoration: none;
+    list-style:none;
+    text-align: center;
+}
 
 
 .grid {

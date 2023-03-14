@@ -166,6 +166,7 @@ footer {
     background-color: rgb(255, 251, 0);
     border: 1px solid white;
     padding: 2%;
+
 }
 
 
@@ -184,6 +185,7 @@ footer {
     display: block;
     margin: 0.5%;
     height: 900px;
+
 }
 
 
@@ -216,9 +218,10 @@ footer {
 
 /*ESTE CODIGO LE DA ESTILO A LA FOTO DE PORQUE ELEGIRNOS*/
 .estilo-div2 {
-    background-image: url(porqueelegirnos.png);
+    background-image: url(porqueelegirnos1.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     display: block;
     margin-left: 70%;
     height: 250px;
@@ -241,6 +244,67 @@ footer {
 
 
 
+/* LOS SIGUIENTES CINCO CODIGOS LE DAN LOS ESTILOS A LAS IMAGENES DEL ASIDE "NUESTROS MEJORES PRODUCTOS"*/
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+
+
+.estilo-pproducto1 {
+    background-image: url(producto1.jpg);
+    display: grid;
+    background-position: 50%;
+    grid-auto-rows: minmax(400px, 400px);
+    grid-auto-columns: minmax(700px, 700px);
+
+
+
+}
+
+.estilo-pproducto2 {
+    background-image: url(producto2.jpg);
+    display: grid;
+    background-position: 50%;
+    grid-auto-rows: minmax(400px, 400px);
+    grid-auto-columns: minmax(700px, 700px);
+
+
+}
+
+.estilo-pproducto3 {
+    background-image: url(producto3.jpg);
+    display: grid;
+    background-position: 50%;
+    grid-auto-rows: minmax(400px, 400px);
+    grid-auto-columns: minmax(700px, 700px);
+
+
+
+}
+
+.estilo-pproducto4 {
+    background-image: url(producto4.jpg);
+    display: grid;
+    grid-auto-rows: minmax(400px, 400px);
+    grid-auto-columns: minmax(700px, 700px);
+
+
+
+}
+
+
+
+
+
+
+
+
+
 .estilo-li1 {
     padding-top: 2.5%;
     color: rgb(229, 255, 0);
@@ -249,20 +313,22 @@ footer {
 
 }
 
+
+
 .estilo-li2 {
     padding-top: 2.5%;
     color: rgb(255, 255, 255);
     font-size: 18px;
     max-width: 750px;
-  
+
 
 
 }
 
 
-.estiloli3{
+.estiloli3 {
     text-decoration: none;
-    list-style:none;
+    list-style: none;
     text-align: center;
 }
 
@@ -314,6 +380,18 @@ form {
 
 /*  HEADER NAV SECTION ASIDE FOOTER 
 ESTO HAY QUE USAR PARA LAS GRIDS 
+
+
+aside {
+    display: grid;
+    grid-template-areas:
+
+    " estilo-pproducto1 estilo-pproducto2"
+    "estilo-pproducto3 "
+    "estilo-pproducto4"
+;
+}
+
 
 .estilo-grids {
     display: grid;

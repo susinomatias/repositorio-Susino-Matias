@@ -53,6 +53,7 @@ h1 {
 
 
 
+
 /*HACE CAMBIAR DE COLOR AL H1 (A) CUANDO SE LE PASA EL CURSOR ENCIMA)*/
 .estilo-h1:hover {
     transition: background-color 1s;
@@ -259,36 +260,37 @@ aside {
     background-image: url(producto1.jpg);
     display: grid;
     background-position: 50%;
+    width: 100%;
+    grid-template-rows: ;
+    grid-template-columns: ;
+    background-size: contain;
+
+    /*
     grid-auto-rows: minmax(400px, 400px);
     grid-auto-columns: minmax(700px, 700px);
-   transform;
+*/
 
 }
 
-.estilo-pproducto1:hover {
 
-transform: ;
-
-}
 
 
 .estilo-pproducto2 {
     background-image: url(producto2.jpg);
     display: grid;
     background-position: 50%;
-    grid-auto-rows: minmax(400px, 400px);
-    grid-auto-columns: minmax(700px, 700px);
-
-
+    width: 100%;
+grid-template-rows: ;
+grid-template-columns: ;
 }
 
 .estilo-pproducto3 {
     background-image: url(producto3.jpg);
     display: grid;
     background-position: 50%;
-    grid-auto-rows: minmax(400px, 400px);
-    grid-auto-columns: minmax(700px, 700px);
-
+    width: 100%;
+    grid-template-rows: ;
+    grid-template-columns: ;
 
 
 }
@@ -296,9 +298,9 @@ transform: ;
 .estilo-pproducto4 {
     background-image: url(producto4.jpg);
     display: grid;
-    grid-auto-rows: minmax(400px, 400px);
-    grid-auto-columns: minmax(700px, 700px);
-
+    width: 100%;
+    grid-template-rows: ;
+    grid-template-columns: ;
 
 
 }

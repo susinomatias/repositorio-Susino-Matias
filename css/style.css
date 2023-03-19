@@ -168,6 +168,13 @@ footer {
     border: 1px solid white;
     padding: 2%;
 
+
+}
+
+
+
+aside {
+    padding: 5%;
 }
 
 
@@ -181,10 +188,10 @@ footer {
 
 /*ESTOS CODIGOS ORDENAN EL SECTION 3*/
 .estilo-section3 {
-    padding-top: 8%;
+    padding-top: 10%;
     margin: auto;
     display: block;
-    margin: 0.5%;
+    margin: 0.1%;
     height: 900px;
 
 }
@@ -192,8 +199,6 @@ footer {
 
 .estilo-div1 {
     background: rgb(0, 0, 0);
-    padding-top: 2%;
-    padding-bottom: 3%;
     border-radius: 2%;
 }
 
@@ -202,7 +207,7 @@ footer {
     color: rgb(255, 251, 0);
     display: block;
     color: white;
-    font-size: 45px;
+    font-size: 20px;
 }
 
 
@@ -217,31 +222,98 @@ footer {
 }
 
 
+
+
+
+
+
 /*ESTE CODIGO LE DA ESTILO A LA FOTO DE PORQUE ELEGIRNOS*/
+
+
 .estilo-div2 {
-    background-image: url(porqueelegirnos1.png);
+    background-image: url(porqueelegirnos.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:98%;
     background-size: contain;
-    display: block;
-    margin-left: 70%;
-    height: 250px;
     position: relative;
-    border-radius: 2%;
-    top: 110px;
+background-position-y: 40px;
+height: 400px;
 
 }
-
 
 .estilo-p1 {
     color: rgb(255, 255, 255);
     font-size: 18px;
     display: block;
     margin: auto;
-    text-align: center;
-    padding: 2%;
+    text-align: end;
+    padding: 10%;
     border-top: 1px solid white;
 }
+
+
+
+.estilo-a1 {
+    position: relative;
+    display: inline;
+    top: 190px;
+    left: 50px; 
+    font-size: 29px;
+    border: 2px solid rgb(255, 0, 0);;
+    padding: 1%;
+}
+
+
+.estilo-registro{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+/* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+
+
+    /*
+    margin-left: 70%;
+    height: 250px;
+    position: relative;
+    border-radius: 2%;
+    top: 110px;
+}
+*/
+
+
+.estilo-li1 {
+
+    color: rgb(229, 255, 0);
+    font-size: 18px;
+    max-width: 750px;
+    padding: 1%;
+    position: relative;
+    bottom: 40px;
+
+}
+
+
+
+/*
+.estilo-li2 {
+    padding: 2.5%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    max-width: 750px;
+    border: 2px solid white;
+    text-decoration: none;
+
+}
+*/
+
+
 
 
 
@@ -261,17 +333,11 @@ aside {
     display: grid;
     background-position: 50%;
     width: 100%;
-    grid-template-rows: ;
-    grid-template-columns: ;
+    grid-template-rows: 400px;
+    grid-template-columns: 400px;
     background-size: contain;
-
-    /*
-    grid-auto-rows: minmax(400px, 400px);
-    grid-auto-columns: minmax(700px, 700px);
-*/
-
+    background-repeat: no-repeat;
 }
-
 
 
 
@@ -280,65 +346,38 @@ aside {
     display: grid;
     background-position: 50%;
     width: 100%;
-grid-template-rows: ;
-grid-template-columns: ;
+    grid-template-rows: 400px;
+    grid-template-columns: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+
 
 .estilo-pproducto3 {
     background-image: url(producto3.jpg);
     display: grid;
     background-position: 50%;
     width: 100%;
-    grid-template-rows: ;
-    grid-template-columns: ;
-
-
+    grid-template-rows: 400px;
+    grid-template-columns: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+
 
 .estilo-pproducto4 {
     background-image: url(producto4.jpg);
     display: grid;
+    background-position: 50%;
     width: 100%;
-    grid-template-rows: ;
-    grid-template-columns: ;
-
-
+    grid-template-rows: 400px;
+    grid-template-columns: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-
-
-.estilo-li1 {
-    padding-top: 2.5%;
-    color: rgb(229, 255, 0);
-    font-size: 18px;
-    max-width: 750px;
-
-}
-
-
-
-.estilo-li2 {
-    padding-top: 2.5%;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    max-width: 750px;
-
-
-
-}
-
-
-.estiloli3 {
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-}
 
 
 .grid {

@@ -1,0 +1,20 @@
+{
+  "name": "nueva-pagina",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susinomatias/repositorio-Susino-Matias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susinomatias/repositorio-Susino-Matias/issues"
+  },
+  "homepage": "https://github.com/susinomatias/repositorio-Susino-Matias#readme",
+  "description": ""
+}

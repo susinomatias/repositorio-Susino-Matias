@@ -368,31 +368,27 @@ footer {
 
 
 
-/*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE CONTACTENOS*/
-/*GRILLA PARA EL FORMATO DEL FORMULARIO EN CONTACTENOS */
-form {
-    position: relative;
-    width: 740px;
-    height: 498px;
-    margin: 0 auto;
-    padding: 1em;
-    box-sizing: border-box;
-    background: #FFF url(background.jpg);
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10em 1em 1em 1em;
-}
+
 
 
 
 
 
 /*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE COMIDAS*/
-.estilo-pcomida {
-    background-image: url(comida.jpg);
-    background-repeat: repeat;
-    height: 300px;
+
+b {
+    .estilo-pcomida {
+        background-image: url(comida.jpg);
+        background-repeat: repeat;
+        height: 300px;
+    }
+
+    .estilo-p2 {
+        color: black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
 }
 
 .estilo-divcomida {
@@ -404,6 +400,534 @@ form {
     display: inline;
     top: 50px;
 }
+
+
+
+/*ESTE ES EL CONTENEDOR DE LOS ELEMENTOS PARA GRID*/
+
+.aside2 {
+
+    .grid.container {
+        display: flex;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 100px;
+        grid-gap: 1fr;
+    }
+
+    @media (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .box {
+        width: 100%;
+        height: 200px;
+        background-color: $color-fondo;
+    }
+
+}
+
+/*CON LOS SIGUIENTES CODIGOS DEFINIMOS LAS IMAGENES DE LA PARTE DE COMIDAS Y SUS ESTILOS*/
+
+.aside2 {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 5%;
+
+
+
+    .estilo-pproducto5 {
+        background-image: url(producto5.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto6 {
+        background-image: url(producto6.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto7 {
+        background-image: url(producto7.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto8 {
+        background-image: url(producto8.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+
+
+
+
+/*FORMATO PARA EL FORMULARIO DE CONTACTENOS*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+    color: #bbb5af;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+    color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+    color: #cbc6c1;
+}
+
+
+#form{
+    position: relative;
+    text-align: center;
+    display: block;
+  
+}
+
+.estilo-form {
+    position: relative;
+    border: 1px solid black;
+    display: block;
+    align-items: center;
+    left: 50%;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+   
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #c0b9b5;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+}
+
+textarea {
+   
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    border: solid 1px #b3aca7;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+}
+
+#submit {
+ 
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #b3aca7;
+    border-top: none;
+}
+
+#submit:hover {
+    color: #e2dedb;
+}
+
+
+
+
+/*CON ESTO TENGEMOS LOS CODIGOS DE LA PAGINA DE BEBIDAS*/
+
+
+.aside2 {
+
+    .grid.container {
+        display: flex;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 100px;
+        grid-gap: 1fr;
+    }
+
+    @media (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .box {
+        width: 100%;
+        height: 200px;
+        background-color: $color-fondo;
+    }
+
+}
+
+/*CON LOS SIGUIENTES CODIGOS DEFINIMOS LAS IMAGENES DE LA PARTE DE BEBIDAS Y SUS ESTILOS*/
+
+.aside2 {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 5%;
+
+
+
+    .estilo-pproducto9 {
+        background-image: url(producto9.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto10 {
+        background-image: url(producto10.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto11 {
+        background-image: url(producto11.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto12 {
+        background-image: url(producto12.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+b {
+    .estilo-pcomida {
+        background-image: url(bebida.jpg);
+        background-repeat: repeat;
+        height: 300px;
+    }
+
+    .estilo-p2 {
+        color: black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+}
+
+.estilo-divcomida {
+    color: black;
+    font-size: $tamaño-letras;
+    display: block;
+    text-align: center;
+    position: relative;
+    display: inline;
+    top: 50px;
+}
+
+
+
+/*CON ESTO TENGEMOS LOS CODIGOS DE LA PAGINA DE BEBIDAS*/
+
+
+.aside2 {
+
+    .grid.container {
+        display: flex;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 100px;
+        grid-gap: 1fr;
+    }
+
+    @media (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .box {
+        width: 100%;
+        height: 200px;
+        background-color: $color-fondo;
+    }
+
+}
+
+/*CON LOS SIGUIENTES CODIGOS DEFINIMOS LAS IMAGENES DE LA PARTE DE DULCES Y SUS ESTILOS*/
+
+.aside2 {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 5%;
+
+
+
+    .estilo-pproducto9 {
+        background-image: url(producto9.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto10 {
+        background-image: url(producto10.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto11 {
+        background-image: url(producto11.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto12 {
+        background-image: url(producto12.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+b {
+    .estilo-pcomida {
+        background-image: url(bebida.jpg);
+        background-repeat: repeat;
+        height: 300px;
+    }
+
+    .estilo-p2 {
+        color: black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+}
+
+.estilo-divcomida {
+    color: black;
+    font-size: $tamaño-letras;
+    display: block;
+    text-align: center;
+    position: relative;
+    display: inline;
+    top: 50px;
+}
+
 
 
 
@@ -498,7 +1022,21 @@ form {
 
 
 
-
+/*
+body {
+    font-family: 'Lato', sans-serif;
+    background: #e2dedb;
+    color: #b3aca7;
+}
+*/
+/*
+header {
+    position: relative;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+}
+*/
 
 
 /* background-repeat: no-repeat;

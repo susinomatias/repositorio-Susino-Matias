@@ -375,22 +375,136 @@ footer {
 
 
 /*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE COMIDAS*/
-
-b {
-    .estilo-pcomida {
-        background-image: url(comida.jpg);
-        background-repeat: repeat;
-        height: 300px;
-    }
-
-    .estilo-p2 {
-        color: black;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-
+.estilo-p2 {
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
+.estilo-pcomida {
+    background-image: url(comida.jpg);
+    background-repeat: repeat;
+    height: 300px;
+}
+
+.estilo-divcomida {
+    color: red;
+    font-size: $tamaño-letras;
+    display: block;
+    text-align: center;
+    position: relative;
+    display: inline;
+    top: 50px;
+}
+
+.aside3 {
+    .grid.container {
+        display: flex;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 100px;
+        grid-gap: 1fr;
+    }
+
+    @media (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .box {
+        width: 100%;
+        height: 200px;
+        background-color: $color-fondo;
+    }
+}
+
+.aside2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 5%;
+
+    .estilo-pproducto5 {
+        background-image: url(producto5.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto6 {
+        background-image: url(producto6.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto7 {
+        background-image: url(producto7.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .estilo-pproducto8 {
+        background-image: url(producto8.jpg);
+        display: grid;
+        background-position: 50%;
+        width: 100%;
+        grid-template-rows: 350px;
+        grid-template-columns: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE BEBIDAS*/
+.estilo-pcomida {
+    background-image: url(bebida.jpg);
+    background-repeat: repeat;
+    height: 300px;
+}
+.estilo-p2 {
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 .estilo-divcomida {
     color: red;
     font-size: $tamaño-letras;
@@ -456,8 +570,8 @@ b {
 
 
 
-    .estilo-pproducto5 {
-        background-image: url(producto5.jpg);
+    .estilo-pproducto13 {
+        background-image: url(producto13.jpg);
         display: grid;
         background-position: 50%;
         width: 100%;
@@ -467,8 +581,8 @@ b {
         background-repeat: no-repeat;
     }
 
-    .estilo-pproducto6 {
-        background-image: url(producto6.jpg);
+    .estilo-pproducto14 {
+        background-image: url(producto14.jpg);
         display: grid;
         background-position: 50%;
         width: 100%;
@@ -478,8 +592,8 @@ b {
         background-repeat: no-repeat;
     }
 
-    .estilo-pproducto7 {
-        background-image: url(producto7.jpg);
+    .estilo-pproducto15 {
+        background-image: url(producto15.jpg);
         display: grid;
         background-position: 50%;
         width: 100%;
@@ -489,8 +603,8 @@ b {
         background-repeat: no-repeat;
     }
 
-    .estilo-pproducto8 {
-        background-image: url(producto8.jpg);
+    .estilo-pproducto16 {
+        background-image: url(producto16.jpg);
         display: grid;
         background-position: 50%;
         width: 100%;
@@ -501,6 +615,11 @@ b {
     }
 
 }
+
+
+
+
+
 
 
 
@@ -603,11 +722,11 @@ textarea:hover::focus:-ms-placeholder {
 }
 
 
-#form{
+#form {
     position: relative;
     text-align: center;
     display: block;
-  
+
 }
 
 .estilo-form {
@@ -621,7 +740,7 @@ textarea:hover::focus:-ms-placeholder {
 input {
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
-   
+
     background: transparent;
     outline: none;
     color: #726659;
@@ -639,7 +758,7 @@ input:hover {
 }
 
 textarea {
-   
+
     padding: 15px;
     background: transparent;
     outline: none;
@@ -659,7 +778,7 @@ textarea:hover {
 }
 
 #submit {
- 
+
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
     color: #b3aca7;
@@ -672,267 +791,6 @@ textarea:hover {
 #submit:hover {
     color: #e2dedb;
 }
-
-
-
-
-/*CON ESTO TENGEMOS LOS CODIGOS DE LA PAGINA DE BEBIDAS*/
-
-
-.aside2 {
-
-    .grid.container {
-        display: flex;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 100px;
-        grid-template-rows: 100px;
-        grid-gap: 1fr;
-    }
-
-    @media (max-width: 500px) {
-        .grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .grid {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .grid {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-    }
-
-    .box {
-        width: 100%;
-        height: 200px;
-        background-color: $color-fondo;
-    }
-
-}
-
-/*CON LOS SIGUIENTES CODIGOS DEFINIMOS LAS IMAGENES DE LA PARTE DE BEBIDAS Y SUS ESTILOS*/
-
-.aside2 {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    gap: 20px;
-    padding: 5%;
-
-
-
-    .estilo-pproducto9 {
-        background-image: url(producto9.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .estilo-pproducto10 {
-        background-image: url(producto10.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .estilo-pproducto11 {
-        background-image: url(producto11.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .estilo-pproducto12 {
-        background-image: url(producto12.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-}
-
-b {
-    .estilo-pcomida {
-        background-image: url(bebida.jpg);
-        background-repeat: repeat;
-        height: 300px;
-    }
-
-    .estilo-p2 {
-        color: black;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-
-}
-
-.estilo-divcomida {
-    color: black;
-    font-size: $tamaño-letras;
-    display: block;
-    text-align: center;
-    position: relative;
-    display: inline;
-    top: 50px;
-}
-
-
-
-/*CON ESTO TENGEMOS LOS CODIGOS DE LA PAGINA DE BEBIDAS*/
-
-
-.aside2 {
-
-    .grid.container {
-        display: flex;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 100px;
-        grid-template-rows: 100px;
-        grid-gap: 1fr;
-    }
-
-    @media (max-width: 500px) {
-        .grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .grid {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .grid {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-    }
-
-    .box {
-        width: 100%;
-        height: 200px;
-        background-color: $color-fondo;
-    }
-
-}
-
-/*CON LOS SIGUIENTES CODIGOS DEFINIMOS LAS IMAGENES DE LA PARTE DE DULCES Y SUS ESTILOS*/
-
-.aside2 {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    gap: 20px;
-    padding: 5%;
-
-
-
-    .estilo-pproducto9 {
-        background-image: url(producto9.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .estilo-pproducto10 {
-        background-image: url(producto10.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .estilo-pproducto11 {
-        background-image: url(producto11.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .estilo-pproducto12 {
-        background-image: url(producto12.jpg);
-        display: grid;
-        background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-}
-
-b {
-    .estilo-pcomida {
-        background-image: url(bebida.jpg);
-        background-repeat: repeat;
-        height: 300px;
-    }
-
-    .estilo-p2 {
-        color: black;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-
-}
-
-.estilo-divcomida {
-    color: black;
-    font-size: $tamaño-letras;
-    display: block;
-    text-align: center;
-    position: relative;
-    display: inline;
-    top: 50px;
-}
-
-
-
-
-
-
 
 
 

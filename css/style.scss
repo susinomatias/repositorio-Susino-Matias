@@ -227,6 +227,7 @@ section {
 /* LOS SIGUIENTES CODIGOS LE DAN LOS ESTILOS A LAS IMAGENES DEL ASIDE "NUESTROS MEJORES PRODUCTOS" Y LAS HACE RESPONSIVE GRACIAS A GRID*/
 aside {
     display: grid;
+    grid-template-rows: 300px 400px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     gap: 20px;
@@ -235,44 +236,32 @@ aside {
 
     .estilo-pproducto1 {
         background-image: url(producto1.jpg);
-        display: grid;
         background-position: 50%;
         width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .estilo-pproducto2 {
         background-image: url(producto2.jpg);
-        display: grid;
         background-position: 50%;
         width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .estilo-pproducto3 {
         background-image: url(producto3.jpg);
-        display: grid;
         background-position: 50%;
         width: 100%;
-        grid-template-rows: 350;
-        grid-template-columns: 350;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .estilo-pproducto4 {
         background-image: url(producto4.jpg);
-        display: grid;
         background-position: 50%;
         width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -500,11 +489,13 @@ footer {
     background-repeat: repeat;
     height: 300px;
 }
+
 .estilo-p2 {
     color: black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
 .estilo-divcomida {
     color: red;
     font-size: $tamaño-letras;
@@ -615,8 +606,6 @@ footer {
     }
 
 }
-
-
 
 
 

@@ -234,7 +234,6 @@ aside {
     padding: 4%;
     
 
-
     .estilo-pproducto1 {
         background-image: url(producto1.jpg);
         background-position: 50%;
@@ -267,7 +266,7 @@ aside {
         background-repeat: no-repeat;
     }
 
-    /*ESTE ES EL CONTENEDOR DE LOS ELEMENTOS PARA GRID*/
+    /*ESTE ES EL CONTENEDOR DE LOS ELEMENTOS PARA GRID
     .grid.container {
         display: flex;
     }
@@ -278,6 +277,8 @@ aside {
         grid-template-rows: auto;
         grid-gap: 1rem;
     }
+*/
+
 
     @media (min-width: 500px) {
         .grid {

@@ -59,7 +59,7 @@ h1 {
 
 
 /*CON ESTO LE DAMOS COLOR A LOS ELEMENTOS DE LA NAVBAR*/
-nav {
+
     .color-div {
         color: $color-letras;
     }
@@ -102,7 +102,7 @@ nav {
     overflow: scroll;
     */
     }
-}
+
 
 
 
@@ -227,17 +227,18 @@ section {
 /* LOS SIGUIENTES CODIGOS LE DAN LOS ESTILOS A LAS IMAGENES DEL ASIDE "NUESTROS MEJORES PRODUCTOS" Y LAS HACE RESPONSIVE GRACIAS A GRID*/
 aside {
     display: grid;
-    grid-template-rows: 300px 400px;
+    grid-template-rows: 400px 400px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     gap: 20px;
-    padding: 5%;
+    padding: 4%;
+    
 
 
     .estilo-pproducto1 {
         background-image: url(producto1.jpg);
         background-position: 50%;
-        width: 100%;
+        /*width: 100%;*/
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -245,7 +246,9 @@ aside {
     .estilo-pproducto2 {
         background-image: url(producto2.jpg);
         background-position: 50%;
+        /*
         width: 100%;
+        */
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -253,7 +256,6 @@ aside {
     .estilo-pproducto3 {
         background-image: url(producto3.jpg);
         background-position: 50%;
-        width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -261,7 +263,6 @@ aside {
     .estilo-pproducto4 {
         background-image: url(producto4.jpg);
         background-position: 50%;
-        width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -286,13 +287,13 @@ aside {
 
     @media (min-width: 768px) {
         .grid {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1fr, 1fr);
         }
     }
 
     @media (min-width: 992px) {
         .grid {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(1fr, 1fr);
         }
     }
 

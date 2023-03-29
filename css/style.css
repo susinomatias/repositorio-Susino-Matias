@@ -42,6 +42,7 @@ h1 .estilo-h1:hover {
 }
 
 /*CON ESTO LE DAMOS COLOR A LOS ELEMENTOS DE LA NAVBAR*/
+
   /*CON EL SIGUIENTE CODIGO HACEMOS QUE LA NAVBAR TOME DOS COLORES*/
   /*ESTE ES EL COLOR DE "MAS SOBRE NOSOTROS*/
   /* con los tres codigos de abajo modifico la barra de scroll*/
@@ -189,34 +190,34 @@ aside {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   gap: 20px;
-  padding: 5%;
+  padding: 4%;
   /*ESTE ES EL CONTENEDOR DE LOS ELEMENTOS PARA GRID*/
 }
 aside .estilo-pproducto1 {
   background-image: url(producto1.jpg);
   background-position: 50%;
-  width: 100%;
+  /*width: 100%;*/
   background-size: contain;
   background-repeat: no-repeat;
 }
 aside .estilo-pproducto2 {
   background-image: url(producto2.jpg);
   background-position: 50%;
+  /*
   width: 100%;
+  */
   background-size: contain;
   background-repeat: no-repeat;
 }
 aside .estilo-pproducto3 {
   background-image: url(producto3.jpg);
   background-position: 50%;
-  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 aside .estilo-pproducto4 {
   background-image: url(producto4.jpg);
   background-position: 50%;
-  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -236,12 +237,12 @@ aside .grid {
 }
 @media (min-width: 768px) {
   aside .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
   }
 }
 @media (min-width: 992px) {
   aside .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
   }
 }
 aside .box {

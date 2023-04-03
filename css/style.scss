@@ -243,6 +243,7 @@ aside {
     }
 
     .estilo-pproducto2 {
+
         background-image: url(producto2.jpg);
         background-position: 50%;
         /*
@@ -301,7 +302,7 @@ aside {
     .box {
         width: 100%;
         height: 200px;
-        background-color: $color-fondo;
+        background-color: $color-fondo; 
     }
 }
 

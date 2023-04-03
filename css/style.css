@@ -212,7 +212,7 @@ aside {
 aside .estilo-pproducto1 {
   background-image: url(producto1.jpg);
   background-position: 50%;
-  /*width: 100%;*/
+  /*width: 100%*/
   background-size: contain;
   background-repeat: no-repeat;
 }

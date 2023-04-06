@@ -380,7 +380,8 @@ footer {
 }
 
 .estilo-divcomida {
-    color: red;
+    background-color: linea;
+    color: rgb(0, 0, 0);
     font-size: $tamaño-letras;
     display: block;
     text-align: center;
@@ -500,6 +501,7 @@ footer {
 }
 
 .estilo-divcomida {
+  
     color: red;
     font-size: $tamaño-letras;
     display: block;

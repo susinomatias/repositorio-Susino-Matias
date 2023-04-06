@@ -90,7 +90,6 @@ body::-webkit-scrollbar-thumb {
 /* CON ESTE CODIGO LE DAMOS EL ESTILO A TODO EL PRIMER SECTION (1)*/
 section {
   padding-bottom: 100px;
-
   /*ESTE CODIGO LE QUITA EL SUBRAYADO Y DA COLOR A LOS LINKS DEL CARRUSEL*/
 }
 
@@ -98,12 +97,10 @@ section h2 {
   font-size: 35px;
   font-family: melankola;
   padding-top: 2%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   display: block;
   margin: auto;
   text-align: center;
-  border-bottom: 1px solid white;
-
 }
 
 section .color-p {
@@ -119,9 +116,8 @@ section .estilo-h5 {
 
 /*ESTOS CODIGOS LE DAN ESTILO AL SECTION (2)*/
 .estilo-div1 {
+  background: rgb(0, 0, 0);
   border-radius: 2%;
-  height: 700px;
-  background:linear-gradient(rgb(0, 0, 0), rgb(185, 182, 182)); 
 }
 
 .estilo-h2 {
@@ -129,54 +125,53 @@ section .estilo-h5 {
   display: block;
   color: rgb(255, 255, 255);
   font-size: 25px;
-  padding-bottom: 2%;
 }
 
 /*ESTOS CUATRO CODIGOS LE DA ESTILO A LA FOTO DE PORQUE ELEGIRNOS*/
 .estilo-p1 {
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 18px;
   display: block;
   margin: auto;
   text-align: center;
-  border: 1px solid rgb(255, 255, 255);
-  position: relative;
-  bottom: 28px;
+  padding: 1%;
+  border-top: 1px solid rgb(255, 255, 255);
 }
-
-/*
-.estilo-a1 {
-  position: relative;
-  display: inline;
-  font-size: 29px;
-  border: 2px solid rgb(208, 190, 190);
-  color: rgb(255, 255, 255);
-}
-*/
 
 .estilo-div2 {
   background-image: url(porqueelegirnos.jpg);
   background-repeat: repeat;
+  /*
+  background-position: 98%;
+  */
   background-size: contain;
   position: relative;
+  /*
+  background-position-y: 40px;
+  height: 400px;
+  */
 }
-
-
 
 .estilo-registro {
   text-decoration: none;
   color: rgb(255, 255, 255);
-
 }
 
+.estilo-a1 {
+  position: relative;
+  display: inline;
+  top: 180px;
+  left: 50px;
+  font-size: 29px;
+  border: 2px solid rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
 
 /*ESTOS 2 CODIGOS LE DAN ESTILO A LOS MOTIVOS PARA SUSCRIBIRSE*/
 .estilo-divsection2 {
   position: relative;
   display: block;
-  padding-top: 8%;
-
-
+  position: relative;
   /*
   bottom: 280px;
   height: 120px;
@@ -188,9 +183,10 @@ section .estilo-h5 {
   font-size: 18px;
   max-width: 750px;
   padding: 1%;
-  padding-top: 2%;
   position: relative;
+  /*
   bottom: 40px;
+  */
 }
 
 /*ESTE CODIGO LE DA EL ESTILO AL TITULO DE LAS CUATRO IMAGENES*/
@@ -231,7 +227,7 @@ aside {
 aside .estilo-pproducto1 {
   background-image: url(producto1.jpg);
   background-position: 50%;
-  /*width: 100%*/
+  /*width: 100%;*/
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -292,13 +288,13 @@ footer {
 }
 
 footer .estilo-footer {
+  border-bottom: 2px solid rgb(0, 0, 0);
   padding-bottom: 1%;
 }
 
 footer .estilo-footer4 {
   border-top: 2px solid rgb(0, 0, 0);
   text-align: center;
-
 }
 
 footer .estilo-linkfooter {
@@ -307,20 +303,19 @@ footer .estilo-linkfooter {
   text-align: center;
   display: inline;
   font-size: 25px;
-
+  border-right: 1px solid rgb(0, 0, 0);
 }
 
 footer .estilo-pfooter {
   display: inline;
   text-align: center;
-
 }
 
 footer .estilo-pfooter2 {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 25px;
-
+  border-right: 1px solid rgb(0, 0, 0);
 }
 
 footer .estilo-divfooter {
@@ -347,7 +342,8 @@ footer .estilo-divfooter1 {
 }
 
 .estilo-divcomida {
-  color: red;
+  background-color: linea;
+  color: rgb(0, 0, 0);
   font-size: 35px;
   display: block;
   text-align: center;

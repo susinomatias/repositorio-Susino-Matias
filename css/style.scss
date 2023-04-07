@@ -60,48 +60,48 @@ h1 {
 
 /*CON ESTO LE DAMOS COLOR A LOS ELEMENTOS DE LA NAVBAR*/
 
-    .color-div {
-        color: $color-letras;
-    }
+.color-div {
+    color: $color-letras;
+}
 
-    .container-fluid {
-        background-color: $color-principal;
-        display: inline;
-    }
+.container-fluid {
+    background-color: $color-principal;
+    display: inline;
+}
 
-    /*CON EL SIGUIENTE CODIGO HACEMOS QUE LA NAVBAR TOME DOS COLORES*/
-    .navbar {
-        margin: auto;
-        border-radius: 3%;
-        padding: 10%;
-    }
+/*CON EL SIGUIENTE CODIGO HACEMOS QUE LA NAVBAR TOME DOS COLORES*/
+.navbar {
+    margin: auto;
+    border-radius: 3%;
+    padding: 10%;
+}
 
-    .estilo-fixed {
-        position: fixed;
-    }
+.estilo-fixed {
+    position: fixed;
+}
 
-    /*ESTE ES EL COLOR DE "MAS SOBRE NOSOTROS*/
-    .color-pnav {
-        color: $color-letras;
+/*ESTE ES EL COLOR DE "MAS SOBRE NOSOTROS*/
+.color-pnav {
+    color: $color-letras;
 
-    }
+}
 
-    /* con los tres codigos de abajo modifico la barra de scroll*/
-    body::-webkit-scrollbar {
-        width: 16px;
-    }
+/* con los tres codigos de abajo modifico la barra de scroll*/
+body::-webkit-scrollbar {
+    width: 16px;
+}
 
-    body::-webkit-scrollbar-track {
-        background: linear-gradient($color-principal, $color-fondo);
-    }
+body::-webkit-scrollbar-track {
+    background: linear-gradient($color-principal, $color-fondo);
+}
 
-    body::-webkit-scrollbar-thumb {
-        background: linear-gradient($color-principal, $color-fondo);
-        /*
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient($color-principal, $color-fondo);
+    /*
     border: 0.5px solid black;
     overflow: scroll;
     */
-    }
+}
 
 
 
@@ -109,6 +109,8 @@ h1 {
 /* CON ESTE CODIGO LE DAMOS EL ESTILO A TODO EL PRIMER SECTION (1)*/
 section {
     padding-bottom: 100px;
+    
+
 
     h2 {
         font-size: $tamaño-letras;
@@ -140,6 +142,7 @@ section {
 .estilo-div1 {
     background: $color-letras;
     border-radius: 2%;
+   
 }
 
 .estilo-h2 {
@@ -154,28 +157,30 @@ section {
 /*ESTOS CUATRO CODIGOS LE DA ESTILO A LA FOTO DE PORQUE ELEGIRNOS*/
 
 .estilo-p1 {
-    color: $color-fondo;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     display: block;
     margin: auto;
-    text-align: end;
-    padding: 10%;
-    border-top: 1px solid $color-fondo;
+    text-align: center;
+    padding: 1%;
+    border-top: 1px solid rgb(255, 255, 255);
 }
+
 
 .estilo-div2 {
     background-image: url(porqueelegirnos.jpg);
-    background-repeat: no-repeat;
-    background-position: 98%;
+    background-repeat: repeat;
     background-size: contain;
     position: relative;
-    background-position-y: 40px;
-    height: 400px;
+   
 }
 
 .estilo-registro {
     text-decoration: none;
     color: $color-fondo;
+    text-align: center;
+    background-repeat: repeat;
+   
 }
 
 .estilo-a1 {
@@ -194,8 +199,11 @@ section {
     position: relative;
     display: block;
     position: relative;
+    /*
     bottom: 280px;
     height: 120px;
+    */
+
 }
 
 .estilo-li1 {
@@ -204,7 +212,7 @@ section {
     max-width: 750px;
     padding: 1%;
     position: relative;
-    bottom: 40px;
+   
 }
 
 
@@ -232,7 +240,7 @@ aside {
     grid-gap: 20px;
     gap: 20px;
     padding: 4%;
-    
+
 
     .estilo-pproducto1 {
         background-image: url(producto1.jpg);
@@ -302,7 +310,7 @@ aside {
     .box {
         width: 100%;
         height: 200px;
-        background-color: $color-fondo; 
+        background-color: $color-fondo;
     }
 }
 
@@ -367,104 +375,125 @@ footer {
 
 
 /*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE COMIDAS*/
-.estilo-p2 {
-    color: black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
 
-.estilo-pcomida {
-    background-image: url(comida.jpg);
-    background-repeat: repeat;
-    height: 300px;
-}
 
-.estilo-divcomida {
-    background-color: linea;
-    color: rgb(0, 0, 0);
-    font-size: $tamaño-letras;
-    display: block;
-    text-align: center;
-    position: relative;
-    display: inline;
-    top: 50px;
-}
-
-.aside3 {
-    .grid.container {
-        display: flex;
+    .estilo-p2 {
+        color: rgb(255, 255, 255);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        background-image: url(comida.jpg);
+        background-repeat: repeat;
+        background-position: 20%;
+        color: rgb(0, 0, 0);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 100px;
-        grid-template-rows: 100px;
-        grid-gap: 1fr;
+    .estilo-p3 {
+        font-size: 25px;
+        position: relative;
+        top: 110px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 251, 0);
+        text-align: center;
+
     }
 
-    @media (max-width: 500px) {
+
+    .estilo-divcomida {
+        background-color: linea;
+        color: rgb(0, 0, 0);
+        font-size: $tamaño-letras;
+        display: block;
+        text-align: center;
+        position: relative;
+        display: inline;
+        top: 50px;
+    }
+
+
+
+
+    .aside2 {
+        .grid.container {
+            display: flex;
+        }
+    
         .grid {
-            grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: 100px;
+            grid-template-rows: 100px;
+            grid-gap: 1fr;
+        }
+    
+        @media (max-width: 500px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    
+        @media (min-width: 992px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    
+        .box {
+            width: 100%;
+            height: 200px;
+            background-color: $color-fondo;
         }
     }
-
-    @media (min-width: 768px) {
-        .grid {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .grid {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-    }
-
-    .box {
-        width: 100%;
-        height: 200px;
-        background-color: $color-fondo;
-    }
-}
 
 .aside2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     gap: 20px;
-    padding: 5%;
+    padding: 1%;
 
     .estilo-pproducto5 {
         background-image: url(producto5.jpg);
         display: grid;
+       height: 300px;
+       width: 300px;
+       width: 100%;
         background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
         background-size: contain;
         background-repeat: no-repeat;
+        position: relative;
+        top: 110px;
     }
 
     .estilo-pproducto6 {
         background-image: url(producto6.jpg);
         display: grid;
+       height: 300px;
+       width: 300px;
+       width: 100%;
         background-position: 50%;
-        width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
         background-size: contain;
         background-repeat: no-repeat;
+        position: relative;
+        top: 60px;
     }
 
     .estilo-pproducto7 {
-        background-image: url(producto7.jpg);
+        background-image: url(producto20.jpg);
         display: grid;
         background-position: 50%;
         width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
+        grid-template-rows: 300px;
+        grid-template-columns: 300px;
         background-size: contain;
         background-repeat: no-repeat;
+       
     }
 
     .estilo-pproducto8 {
@@ -472,11 +501,14 @@ footer {
         display: grid;
         background-position: 50%;
         width: 100%;
-        grid-template-rows: 350px;
-        grid-template-columns: 350px;
+        grid-template-rows: 300px;
+        grid-template-columns: 300px;
         background-size: contain;
         background-repeat: no-repeat;
+        position: relative;
+        top: 25px;
     }
+
 }
 
 
@@ -488,20 +520,17 @@ footer {
 
 
 /*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE BEBIDAS*/
+/*
 .estilo-pcomida {
     background-image: url(bebida.jpg);
     background-repeat: repeat;
     height: 300px;
 }
+*/
 
-.estilo-p2 {
-    color: black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
 
 .estilo-divcomida {
-  
+
     color: red;
     font-size: $tamaño-letras;
     display: block;

@@ -1,7 +1,6 @@
 /*VARIABLES*/
 /*FONDO DEL BODY*/
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
-
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -22,7 +21,6 @@ h1 {
   margin: 1%;
   /*HACE CAMBIAR DE COLOR AL H1 (A) CUANDO SE LE PASA EL CURSOR ENCIMA)*/
 }
-
 h1 .estilo-h1:hover {
   transition: background-color 1s;
   color: rgb(103, 69, 98);
@@ -33,7 +31,6 @@ h1 .estilo-h1:hover {
   font-family: melankola;
   src: url(melankola.ttf);
 }
-
 /*EL SIGUIENTE CODIGO LE DA EL MARGAN AL H1*/
 .estilo-anav1 {
   margin-left: 4.5%;
@@ -92,7 +89,6 @@ section {
   padding-bottom: 100px;
   /*ESTE CODIGO LE QUITA EL SUBRAYADO Y DA COLOR A LOS LINKS DEL CARRUSEL*/
 }
-
 section h2 {
   font-size: 35px;
   font-family: melankola;
@@ -102,13 +98,11 @@ section h2 {
   margin: auto;
   text-align: center;
 }
-
 section .color-p {
   text-align: center;
   font-size: 20px;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
-
 section .estilo-h5 {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -141,20 +135,15 @@ section .estilo-h5 {
 .estilo-div2 {
   background-image: url(porqueelegirnos.jpg);
   background-repeat: repeat;
-  /*
-  background-position: 98%;
-  */
   background-size: contain;
   position: relative;
-  /*
-  background-position-y: 40px;
-  height: 400px;
-  */
 }
 
 .estilo-registro {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  text-align: center;
+  background-repeat: repeat;
 }
 
 .estilo-a1 {
@@ -184,9 +173,6 @@ section .estilo-h5 {
   max-width: 750px;
   padding: 1%;
   position: relative;
-  /*
-  bottom: 40px;
-  */
 }
 
 /*ESTE CODIGO LE DA EL ESTILO AL TITULO DE LAS CUATRO IMAGENES*/
@@ -223,7 +209,6 @@ aside {
       }
   */
 }
-
 aside .estilo-pproducto1 {
   background-image: url(producto1.jpg);
   background-position: 50%;
@@ -231,7 +216,6 @@ aside .estilo-pproducto1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 aside .estilo-pproducto2 {
   background-image: url(producto2.jpg);
   background-position: 50%;
@@ -241,39 +225,33 @@ aside .estilo-pproducto2 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 aside .estilo-pproducto3 {
   background-image: url(producto3.jpg);
   background-position: 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 aside .estilo-pproducto4 {
   background-image: url(producto4.jpg);
   background-position: 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (min-width: 500px) {
   aside .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (min-width: 768px) {
   aside .grid {
     grid-template-columns: repeat(1fr, 1fr);
   }
 }
-
 @media (min-width: 992px) {
   aside .grid {
     grid-template-columns: repeat(1fr, 1fr);
   }
 }
-
 aside .box {
   width: 100%;
   height: 200px;
@@ -286,17 +264,14 @@ footer {
   border: 1px solid rgb(255, 255, 255);
   padding: 2%;
 }
-
 footer .estilo-footer {
   border-bottom: 2px solid rgb(0, 0, 0);
   padding-bottom: 1%;
 }
-
 footer .estilo-footer4 {
   border-top: 2px solid rgb(0, 0, 0);
   text-align: center;
 }
-
 footer .estilo-linkfooter {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -305,24 +280,20 @@ footer .estilo-linkfooter {
   font-size: 25px;
   border-right: 1px solid rgb(0, 0, 0);
 }
-
 footer .estilo-pfooter {
   display: inline;
   text-align: center;
 }
-
 footer .estilo-pfooter2 {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 25px;
   border-right: 1px solid rgb(0, 0, 0);
 }
-
 footer .estilo-divfooter {
   text-align: center;
   padding: 1%;
 }
-
 footer .estilo-divfooter1 {
   text-align: center;
   padding-top: 1%;
@@ -330,15 +301,24 @@ footer .estilo-divfooter1 {
 
 /*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE COMIDAS*/
 .estilo-p2 {
-  color: black;
+  color: rgb(255, 255, 255);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-image: url(comida.jpg);
+  background-repeat: repeat;
+  background-position: 20%;
+  color: rgb(0, 0, 0);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-.estilo-pcomida {
-  background-image: url(comida.jpg);
-  background-repeat: repeat;
-  height: 300px;
+.estilo-p3 {
+  font-size: 25px;
+  position: relative;
+  top: 110px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 251, 0);
+  text-align: center;
 }
 
 .estilo-divcomida {
@@ -352,36 +332,31 @@ footer .estilo-divfooter1 {
   top: 50px;
 }
 
-.aside3 .grid.container {
+.aside2 .grid.container {
   display: flex;
 }
-
-.aside3 .grid {
+.aside2 .grid {
   display: grid;
   grid-template-columns: 100px;
   grid-template-rows: 100px;
   grid-gap: 1fr;
 }
-
 @media (max-width: 500px) {
-  .aside3 .grid {
+  .aside2 .grid {
     grid-template-columns: 1fr;
   }
 }
-
 @media (min-width: 768px) {
-  .aside3 .grid {
+  .aside2 .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (min-width: 992px) {
-  .aside3 .grid {
+  .aside2 .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
-.aside3 .box {
+.aside2 .box {
   width: 100%;
   height: 200px;
   background-color: rgb(255, 255, 255);
@@ -392,66 +367,63 @@ footer .estilo-divfooter1 {
   grid-template-columns: 1fr;
   grid-gap: 20px;
   gap: 20px;
-  padding: 5%;
+  padding: 1%;
 }
-
 .aside2 .estilo-pproducto5 {
   background-image: url(producto5.jpg);
   display: grid;
-  background-position: 50%;
+  height: 300px;
+  width: 300px;
   width: 100%;
-  grid-template-rows: 350px;
-  grid-template-columns: 350px;
+  background-position: 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+  top: 110px;
 }
-
 .aside2 .estilo-pproducto6 {
   background-image: url(producto6.jpg);
   display: grid;
-  background-position: 50%;
+  height: 300px;
+  width: 300px;
   width: 100%;
-  grid-template-rows: 350px;
-  grid-template-columns: 350px;
+  background-position: 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+  top: 60px;
 }
-
 .aside2 .estilo-pproducto7 {
-  background-image: url(producto7.jpg);
+  background-image: url(producto20.jpg);
   display: grid;
   background-position: 50%;
   width: 100%;
-  grid-template-rows: 350px;
-  grid-template-columns: 350px;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px;
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .aside2 .estilo-pproducto8 {
   background-image: url(producto8.jpg);
   display: grid;
   background-position: 50%;
   width: 100%;
-  grid-template-rows: 350px;
-  grid-template-columns: 350px;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px;
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+  top: 25px;
 }
 
 /*A PARTIR DE ACA SON LOS CODIGOS PARA LA PAGINA DE BEBIDAS*/
+/*
 .estilo-pcomida {
-  background-image: url(bebida.jpg);
-  background-repeat: repeat;
-  height: 300px;
+    background-image: url(bebida.jpg);
+    background-repeat: repeat;
+    height: 300px;
 }
-
-.estilo-p2 {
-  color: black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
+*/
 .estilo-divcomida {
   color: red;
   font-size: 35px;
@@ -466,32 +438,27 @@ footer .estilo-divfooter1 {
 .aside2 .grid.container {
   display: flex;
 }
-
 .aside2 .grid {
   display: grid;
   grid-template-columns: 100px;
   grid-template-rows: 100px;
   grid-gap: 1fr;
 }
-
 @media (max-width: 500px) {
   .aside2 .grid {
     grid-template-columns: 1fr;
   }
 }
-
 @media (min-width: 768px) {
   .aside2 .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (min-width: 992px) {
   .aside2 .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
 .aside2 .box {
   width: 100%;
   height: 200px;
@@ -506,7 +473,6 @@ footer .estilo-divfooter1 {
   gap: 20px;
   padding: 5%;
 }
-
 .aside2 .estilo-pproducto13 {
   background-image: url(producto13.jpg);
   display: grid;
@@ -517,7 +483,6 @@ footer .estilo-divfooter1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .aside2 .estilo-pproducto14 {
   background-image: url(producto14.jpg);
   display: grid;
@@ -528,7 +493,6 @@ footer .estilo-divfooter1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .aside2 .estilo-pproducto15 {
   background-image: url(producto15.jpg);
   display: grid;
@@ -539,7 +503,6 @@ footer .estilo-divfooter1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .aside2 .estilo-pproducto16 {
   background-image: url(producto16.jpg);
   display: grid;

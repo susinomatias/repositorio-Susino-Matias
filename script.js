@@ -1,47 +1,72 @@
-let inicio = confirm("!Hola¡ Te damos la bienvenida a SM. En este sitio encontrarás sorpresas ocultas y mucho más, ¿Te sumas a la aventura?");
+// let inicio = confirm("!Hola¡ Te damos la bienvenida a SM. En este sitio encontrarás sorpresas ocultas y mucho más, ¿Te sumas a la aventura?");
 
-let saludar = "hola, ";
+// let saludar = "hola, ";
 
-let edad = prompt("para seleccionar los mejores productos acordes a usted, Ingrese su edad.");
+// let edad = prompt("para seleccionar los mejores productos acordes a usted, Ingrese su edad.");
 
-if   (edad <= 16) {
-    alert("Te recomendamos navegar este sitio con la supervición de un adulto");
+// if   (edad <= 16) {
+//     alert("Te recomendamos navegar este sitio con la supervición de un adulto");
+
+// }
+
+// else if ((edad <= 84) / 4) {
+//     alert("DATO INTERESANTE: Segun su edad usted vivió" + " " + parseInt(edad / 4) + " " + "mundiales. Hemos ajustado nuestro sitio.");
+//     console.log(edad);
+
+// }
+
+// else (edad >= 90); {
+//     alert("Gracias. Hemos ajustado nuestro sitio.");
+//     console.log(edad)
+
+// }
+
+// let nombre = prompt("Ya que nos gusta mantener el misterio de nuestro sitio web, te desafiamos a continuar con este recorrido de conocernos un poco. Mi nombre es Matias Susino (creador de este sitio). y tu, ¿como te llamas?");
+// console.log(nombre);
+
+// function saludarcompilado(saludar, nombre) {
+//     //let saludofinal = (saludar + nombre); 
+//     // console.log(saludofinal); 
+
+// }
+
+// saludarcompilado(alert(saludar + nombre + "!"));
+
+
+// let numerodelasuerte = Number(prompt("ingrese un numero para que le indiquemos cual es su numero de la suerte")); 
+
+// if (isNaN (numerodelasuerte) || edad == NaN) {
+
+// let numerosuerte = prompt ("eso no es un número, ingrese un numero valido (Se lo diremos antes de salir de nuestro sitio");
+
+// alert (numerosuerte - numerodelasuerte + edad); 
+
+// }
+
+
+let edad = Number(prompt('Ingrese su edad'));
+
+while (isNaN(edad) || edad <= 0) {
+
+	console.error("No ha ingresado un valor válido");
+
+	edad = Number(prompt("Ingrese su edad"));
 
 }
 
-else if ((edad <= 84) / 4) {
-    alert("DATO INTERESANTE: Segun su edad usted vivió" + " " + parseInt(edad / 4) + " " + "mundiales. Hemos ajustado nuestro sitio.");
-    console.log(edad);
-
-}
-
-else (edad >= 90); {
-    alert("Gracias. Hemos ajustado nuestro sitio.");
-    console.log(edad)
-
-}
-
-let nombre = prompt("Ya que nos gusta mantener el misterio de nuestro sitio web, te desafiamos a continuar con este recorrido de conocernos un poco. Mi nombre es Matias Susino (creador de este sitio). y tu, ¿como te llamas?");
-console.log(nombre);
-
-function saludarcompilado(saludar, nombre) {
-    //let saludofinal = (saludar + nombre); 
-    // console.log(saludofinal); 
-
-}
-
-saludarcompilado(alert(saludar + nombre + "!"));
+alert('Usted tiene ' + edad + ' años');
 
 
-let numerodelasuerte = Number(prompt("ingrese un numero para que le indiquemos cual es su numero de la suerte")); 
 
-if (isNaN (numerodelasuerte) || edad == NaN) {
 
-let numerosuerte = prompt ("eso no es un número, ingrese un numero valido (Se lo diremos antes de salir de nuestro sitio");
 
-alert (numerosuerte - numerodelasuerte + edad); 
 
-}
+
+
+
+
+
+
 
 
 

@@ -1,3 +1,20 @@
+
+function bienvenida (nombre) { 
+  console.log (nombre);
+  alert ("Hola, " + nombre + "." + " " + "te damos la bienvenida a SoyMa, esperamos que disfrutes nuestro sitio web.")  
+}
+
+
+bienvenida(prompt("ingrese su nombre o apodo para una experiencia más personalizada.")); 
+
+
+const productos = [ prompt ("Como ya te habrás dado cuenta, nuestro sitio cuenta con un gran numero de personalizaciones, para que la experiencia de cada usuario sea unica. Te pedimos que ingreses tres cosas que te gusten mucho"), prompt ("Buena eleccion, quedan dos más"), prompt ("Oh, tienes unos gustos muy destacables, uno más y terminamos.") ]
+console.log (productos); 
+alert ("segun tus gustos: " + productos.join(", ") + " " + "eres una persona que sabe lo que quiere."); 
+
+
+
+
 // let inicio = confirm("!Hola¡ Te damos la bienvenida a SM. En este sitio encontrarás sorpresas ocultas y mucho más, ¿Te sumas a la aventura?");
 
 // let saludar = "hola, ";
@@ -44,27 +61,17 @@
 // }
 
 
-let edad = Number(prompt('Ingrese su edad'));
+// let edad = Number(prompt('Ingrese su edad'));
 
-while (isNaN(edad) || edad <= 0) {
+// while (isNaN(edad) || edad <= 0) {
 
-	console.error("No ha ingresado un valor válido");
+// 	console.error("No ha ingresado un valor válido");
 
-	edad = Number(prompt("Ingrese su edad"));
+// 	edad = Number(prompt("Ingrese su edad"));
 
-}
+// }
 
-alert('Usted tiene ' + edad + ' años');
-
-
-
-
-
-
-
-
-
-
+// alert('Usted tiene ' + edad + ' años');
 
 
 

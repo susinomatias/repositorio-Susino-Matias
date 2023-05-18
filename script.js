@@ -14,6 +14,18 @@ alert ("segun tus gustos: " + productos.join(", ") + " " + "eres una persona que
 
 
 
+// HACER UN PROGRAMA QUE TE HAGA ESCRIBIR UNA PALABRA DEFINIDA Y TE CONTABILICE LAS VECES QUE ESCRIBIS ESA PALABRA DE FORMA CORRECTA Y EL TIEMPO QUE DURASTE EN EL "JUEGO", CUANDO TE EQUIVOQUES, SE DETIENE EL PROGRAMA Y TE INDICA CUANTAS VECES BIEN ESCRIBISTE ESA PALABRA Y EL TIEMPO// 
+
+
+
+
+
+
+
+
+
+
+
 
 // let inicio = confirm("!Hola¡ Te damos la bienvenida a SM. En este sitio encontrarás sorpresas ocultas y mucho más, ¿Te sumas a la aventura?");
 

@@ -216,34 +216,34 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Obtener todos los botones de "Agregar al carrito"
+           
             const agregarBotones = document.querySelectorAll('.agregar-carrito');
 
-            // Obtener el contenedor del carrito
+           
             const carritoContainer = document.getElementById('carrito');
 
-            // Crear un array para almacenar los productos agregados al carrito
+            
             let carrito = [];
 
-            // Agregar evento de clic a cada botón de "Agregar al carrito"
+        
             agregarBotones.forEach(function (boton) {
                 boton.addEventListener('click', function () {
                     const producto = this.getAttribute('data-producto');
 
-                    // Agregar el producto al array del carrito
+                   
                     carrito.push(producto);
 
-                    // Actualizar la visualización del carrito
+                   
                     mostrarCarrito();
                 });
             });
 
-            // Función para mostrar los productos en el carrito
+          
             function mostrarCarrito() {
-                // Limpiar el contenido anterior del carrito
+             
                 carritoContainer.innerHTML = '';
 
-                // Mostrar cada producto agregado en el carrito
+               
                 carrito.forEach(function (producto) {
                     const productoElemento = document.createElement('p');
                     productoElemento.textContent = producto;
@@ -257,47 +257,47 @@
 
 <script class="estilo-java">
     document.addEventListener('DOMContentLoaded', function () {
-      // Obtener todos los botones de "Agregar al carrito"
+     
       const agregarBotones = document.querySelectorAll('.agregar-carrito');
     
-      // Obtener el contenedor del carrito
+      
       const carritoContainer = document.getElementById('carrito');
       const totalContainer = document.createElement('p');
       totalContainer.textContent = 'Total: $0';
       carritoContainer.appendChild(totalContainer);
     
-      // Crear un array para almacenar los productos agregados al carrito
+     
       let carrito = [];
       let total = 0;
     
-      // Agregar evento de clic a cada botón de "Agregar al carrito"
+      
       agregarBotones.forEach(function (boton) {
         boton.addEventListener('click', function () {
           const producto = this.getAttribute('data-producto');
-          const precio = Math.floor(50 * 10); // Generar precio aleatorio entre 1 y 100
+          const precio = Math.floor(50 * 10); 
     
-          // Agregar el producto al array del carrito
+        
           carrito.push({ producto: producto, precio: precio });
           total += precio;
     
-          // Actualizar la visualización del carrito y el total
+     
           mostrarCarrito();
         });
       });
     
-      // Función para mostrar los productos en el carrito
+     
       function mostrarCarrito() {
-        // Limpiar el contenido anterior del carrito
+      
         carritoContainer.innerHTML = '';
     
-        // Mostrar cada producto agregado en el carrito
+       
         carrito.forEach(function (item) {
           const productoElemento = document.createElement('p');
           productoElemento.textContent = `${item.producto} - Precio: $${item.precio}`;
           carritoContainer.appendChild(productoElemento);
         });
     
-        // Mostrar el total en el contenedor correspondiente
+        
         totalContainer.textContent = `Total: $${total}`;
       }
     });
@@ -309,49 +309,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-<!-- <script>
-    let carrito = [];
-    let total = 0;
-
-    // Agregar evento de clic a cada botón de "Agregar al carrito"
-    agregarBotones.forEach(function (boton) {
-        boton.addEventListener('click', function () {
-            const producto = this.getAttribute('data-producto');
-            const precio = parseFloat(this.getAttribute('data-precio'));
-
-            // Agregar el producto al array del carrito
-            carrito.push({ producto: producto, precio: precio });
-            total += precio;
-
-            // Actualizar la visualización del carrito y el total
-            mostrarCarrito();
-        });
-    });
-</script>
-
-
-// // Función para mostrar los productos en el carrito
-// function mostrarCarrito() {
-// // Limpiar el contenido anterior del carrito
-// carritoContainer.innerHTML = '';
-// let carritoHTML = '';
-
-// // Mostrar cada producto agregado en el carrito
-// carrito.forEach(function (item) {
-// carritoHTML += `<p>${item.producto} - Precio: $${item.precio}</p>`;
-// });
-
-// // Mostrar el carrito en el contenedor correspondiente
-// carritoContainer.innerHTML = carritoHTML;
-
-// // Mostrar el total en el contenedor correspondiente
-// const totalContainer = document.getElementById('total');
-// totalContainer.textContent = `Total: $${total}`;
-// } -->

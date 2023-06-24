@@ -1,25 +1,3 @@
-let alerta = alert("Bienvenido a Soyma. Recorre nuestro sitio para encontrar las pistas ocultas y ganar increibles premios");
-
-
- let edad = prompt("para seleccionar los mejores productos acordes a usted, Ingrese su edad.");
-
-
-if (edad <= 16) {
-  alert("Te recomendamos navegar este sitio con la supervición de un adulto");
-  console.log(edad);
-}
-
-else if ((edad <= 84) / 4) {
-  alert("DATO INTERESANTE: Segun su edad usted vivió" + " " + parseInt(edad / 4) + " " + "mundiales.");
-  console.log(edad);
-}
-
-else (edad >= 90); {
-  alert("Gracias. Hemos ajustado nuestro sitio.");
-  console.log(edad)
-}
-
-
 const form = document.getElementById('form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -78,3 +56,32 @@ value = '';
    
 value = '';
 ;
+
+
+const searchInput = document.getElementById('search-input');
+const searchForm = document.getElementById('search-form');
+const resultContainer = document.getElementById('result-container');
+
+
+function showSearchData(searchTerm) {
+
+  const resultText = document.createElement('p');
+  resultText.textContent = `Has buscado: ${searchTerm}`;
+
+  resultContainer.appendChild(resultText);
+}
+
+
+function search() {
+
+  const searchTerm = searchInput.value.trim();
+
+
+  showSearchData(searchTerm);
+}
+
+
+searchForm.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+  search(); 
+});
